@@ -1,6 +1,8 @@
 *{
     margin: 0;padding: 0;box-sizing: border-box;font-family: 'Bebas Neue', cursive;
+    
 }
+
 a{
     font-family: 'Bebas Neue', cursive;  
 }
@@ -11,6 +13,9 @@ a{
    background-size: cover;
   
     
+}
+html{
+    scroll-behavior: smooth;
 }
 .col-4{
     margin-left:500px ;
@@ -76,6 +81,23 @@ nav{
 .gallery{
     transition:all 3s ease-in-out;
 }
+/* #bg1{
+    background-image: url(https://th.bing.com/th/id/OIP.JaoNRQQ5MGvj0YJhDoxD2QHaEo?rs=1&pid=ImgDetMain);
+  
+    background-size: contain;
+}
+#bg2{
+    background-image: url(https://wallpaperaccess.com/full/96465.jpg);
+}
+#bg3{
+    background-image: url(https://i.pinimg.com/originals/31/b1/04/31b104273338250d73bc9d01855b8854.jpg);
+}
+#bg4{
+    background-image: url(https://wallpaperaccess.com/full/4695115.jpg);
+}
+#bg5{
+    background-image: url(https://th.bing.com/th/id/OIP.owAHAa-DrODuxCxZ86Q0wwHaFH?rs=1&pid=ImgDetMain);
+} */
 .travel:hover .gallery{
     transform: scale(1.1);
 }
@@ -105,3 +127,10 @@ ul{
     transition: all 5s ease;
     border: 1px solid #615e5e;
 }
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
