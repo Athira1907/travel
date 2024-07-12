@@ -27,11 +27,18 @@ nav{
 }
 .bg{
     /* background: url(https://i.pinimg.com/originals/83/81/12/8381125d0d62bc5983fd8cc1a9883755.jpg); */
-    background: url(https://th.bing.com/th/id/R.9460b0baf5e326559dd8c53b42f37169?rik=ih3D%2fVaE2PR7nA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f0%2f8%2fd%2f1085404-gorgerous-world-beautiful-places-wallpapers-2560x1600.jpg&ehk=ssnbaSme1A2dV7CkyfR18NMIj8rHjWUPHatkizVSrcA%3d&risl=&pid=ImgRaw&r=0);
+    /* background: url(https://th.bing.com/th/id/R.9460b0baf5e326559dd8c53b42f37169?rik=ih3D%2fVaE2PR7nA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f0%2f8%2fd%2f1085404-gorgerous-world-beautiful-places-wallpapers-2560x1600.jpg&ehk=ssnbaSme1A2dV7CkyfR18NMIj8rHjWUPHatkizVSrcA%3d&risl=&pid=ImgRaw&r=0); */
     width:100% ;
+    /* background: url(https://th.bing.com/th/id/R.e32e0cc258963931504f877613bee2ef?rik=IKSZSf1GVRmRwg&riu=http%3a%2f%2fmrpassenger.com%2fwp-content%2fuploads%2f2019%2f02%2fSummer-Holiday.jpg&ehk=f6D3Hwmud7Bgj45JpF3MI1JhgGPOGq%2fzi9AQ3KzxxwI%3d&risl=&pid=ImgRaw&r=0); */
     height:900px;
+    background-image:
+    linear-gradient(rgba(179, 174, 174, 0.5), rgba(83, 83, 83, 0.5), rgba(114, 113, 113, 0.5), rgba(68, 67, 67, 0.5)),
+    url(https://th.bing.com/th/id/R.e32e0cc258963931504f877613bee2ef?rik=IKSZSf1GVRmRwg&riu=http%3a%2f%2fmrpassenger.com%2fwp-content%2fuploads%2f2019%2f02%2fSummer-Holiday.jpg&ehk=f6D3Hwmud7Bgj45JpF3MI1JhgGPOGq%2fzi9AQ3KzxxwI%3d&risl=&pid=ImgRaw&r=0
+);
+
     background-size: cover;
     text-align: center;
+   
 }
 .row ul li a{
     padding-right:50px ;
@@ -81,6 +88,27 @@ nav{
 .gallery{
     transition:all 3s ease-in-out;
 }
+.parag{
+    position: absolute;
+opacity: 0;
+transition:transform 0.7s;
+top: 0;
+left: 28%;
+color: #fff;
+font-size: 29px;
+/* width: 80px;
+height: 80px; */
+/* top: 0px;
+left: 0px; */
+/* background:rgba(211, 211, 211, 0.5); */
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+transform: translateY(0px);
+}
+
 /* #bg1{
     background-image: url(https://th.bing.com/th/id/OIP.JaoNRQQ5MGvj0YJhDoxD2QHaEo?rs=1&pid=ImgDetMain);
   
@@ -98,8 +126,21 @@ nav{
 #bg5{
     background-image: url(https://th.bing.com/th/id/OIP.owAHAa-DrODuxCxZ86Q0wwHaFH?rs=1&pid=ImgDetMain);
 } */
+ .travel{
+    position: relative;
+    
+   
+ }
 .travel:hover .gallery{
     transform: scale(1.1);
+
+    
+}
+.travel:hover .parag{
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(35px);
+    
 }
 ul{
     list-style: none;
